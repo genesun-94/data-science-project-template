@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>House Pricing Model</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <!-- Layout Fixes -->
+  <link rel="stylesheet" type="text/css" href="/static/semantics.css">
+</head>
+
+<body>
+  <header>
+    <h1>Kaggle House Project Price Page</h1>
+  </header>
+  <main>
+    <section>
+      <form action="http://127.0.0.1:5000/result" method="POST" class="form-example">
+        <div class="contact-name">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="contact-email">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <label for="neighborhood-select">Neighborhood:</label>
+
+        <select name="neighborhood" id="neighborhood-select">
+          <option value="">--Please select your neighborhood--</option>
+          <option value="Blmngtn">Bloomington Heights</option>
+          <option value="Blueste">Bluestem</option>
+          <option value="BrDale">Briardale</option>
+          <option value="BrkSide">Brookside</option>
+          <option value="ClearCr">Clear Creek</option>
+          <option value="CollgCr">College Creek</option>
+          <option value="Crawfor">Crawford</option>
+          <option value="Edwards">Edwards</option>
+          <option value="Gilbert">Gilbert</option>
+          <option value="IDOTRR">Iowa DOT and Rail Road</option>
+          <option value="MeadowV">Meadow Village</option>
+          <option value="Mitchel">Mitchell</option>
+          <option value="Names">North Ames</option>
+          <option value="NoRidge">Northridge</option>
+          <option value="NPkVill">Northpark Villa</option>
+          <option value="NridgHt">Northridge Heights</option>
+          <option value="NWAmes">Northwest Ames</option>
+          <option value="OldTown">Old Town</option>
+          <option value="SWISU">South & West of Iowa State University</option>
+          <option value="Sawyer">Sawyer</option>
+          <option value="SawyerW">Sawyer West</option>
+          <option value="Somerst">Somerset</option>
+          <option value="StoneBr">Stone Brook</option>
+          <option value="Timber">Timberland</option>
+          <option value="Veenker">Veenker</option>
+        </select>
+
+        <label for = "LotArea"> Enter the lot area (in square ft):</label>
+        <input type ="number" name = "lotarea" id = "LotArea" required>
+
+        <div class = "submit-button">
+          <input type = "submit" value = "Get your predicted price here">
+        </div>
+      </form>
+
+    </section>
+  </main>
+</body>
+
+</html>

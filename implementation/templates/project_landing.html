@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>House Pricing Model</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- Layout Fixes -->
+    <link rel="stylesheet" type="text/css" href="/static/semantics.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kaggle House Pricing Model Landing Page</h1>
+    </header>
+    <main>
+    <section>
+      <h2>Introduction to the Project</h2>
+
+      <p>We're given two datasets, training and test, to run a <strong>LASSO linear regression model</strong> in order to
+        predict house prices in Iowa given a set of features. We also had to clean the data to ensure there were no nulls
+        within the datasets so that the linear regression algorithm could run properly. You can click directly <a href = "http://127.0.0.1:5000/predict">here</a> to view the outputs (the predicted sale price of a house).</p>
+    </section>
+    <section>
+        <h2>Feature Engineering</h2>
+
+        <p>After cleaning up the data and filling the missing values/nulls, we created several new features using the data we
+          were given (a method called <em>feature engineering</em>) in order to create more data than what was provided to us.
+        </p>
+    </section>
+    <section>
+        <h2>Scaled/Encoded/Transformed Data</h2>
+
+        <p>Following this, we then scaled and transformed the quantitative data and also encoded the categorical data by using
+          dummy variables.</p>
+    </section>
+    <section>
+        <h2>Train/Test Split</h2>
+
+        <p>Normally, this should be done in the very beginning right after importing the data, but for the sake of the exercise,
+          we did this split here. I used a 75/25 train/test split. </p>
+    </section>
+    <section>
+    <h2>Results</h2>
+
+    <p>My best submission on Kaggle, after arriving at a final RMSE value, was in the top 29%. I plan on going back and
+      reviewing how I can improve on this in the future.</p>
+    </section>
+    </main>
+
+    <footer>
+      <h6>PS: Thanks for checking out the landing page for my House Pricing Model for Kaggle :)</h6>
+    </footer>
+</body>
+
+</html>
